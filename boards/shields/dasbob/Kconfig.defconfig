@@ -1,0 +1,30 @@
+if SHIELD_DASBOB_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "DASBOB"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+# Disable bluethooth
+config BT
+    default n
+config ZMK_BLE
+    default n
+    
+# Enable wired connection
+config ZMK_USB
+    default y
+  
+endif
+
+if SHIELD_DASBOB_LEFT || SHIELD_DASBOB_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+# Use UART for split communiction via TRRS
+config ZMK_SPLIT_UART
+    default y
+
+endif

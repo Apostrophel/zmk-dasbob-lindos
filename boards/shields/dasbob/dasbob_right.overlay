@@ -1,0 +1,29 @@
+#include "dasbob.dtsi"
+
+&default_transform {
+    col-offset = <5>;
+};
+
+&kscan0 {
+    input-gpios
+        = <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Y (P0.06)
+        , <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // U (P0.08)
+        , <&pro_micro 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // I (P0.17)
+        , <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // O (P0.20)
+        , <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // P (P0.22)
+        , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // H (P0.24)
+        , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // J (P0.11)
+        , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // K (P0.09)
+        , <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // L (P0.10)
+        , <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // ; (P1.06)
+        , <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // N (P1.04)
+        , <&pro_micro 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // M (P0.11)
+        , <&pro_micro 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // , (P1.02)
+        , <&pro_micro 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // . (P0.29)
+        , <&pro_micro 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // / (P0.02)
+        , <&pro_micro 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Thumb 1 (P1.15)
+        , <&pro_micro 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Thumb 2 (P1.13)
+        , <&pro_micro 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Thumb 3 (P1.11)
+        ;
+};
+

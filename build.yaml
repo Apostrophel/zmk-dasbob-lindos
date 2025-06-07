@@ -17,4 +17,11 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
----
+
+# Build configuration for DASBOB with nice!nano v2
+# Wired split keyboard setup
+include:
+  - board: nice_nano_v2
+    shield: dasbob_left
+  - board: nice_nano_v2
+    shield: dasbob_right
