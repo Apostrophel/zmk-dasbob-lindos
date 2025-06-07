@@ -6,25 +6,22 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-# Disable bluethooth
+# Disable Bluetooth for wired operation
 config BT
     default n
+
 config ZMK_BLE
     default n
-    
-# Enable wired connection
+
+# Enable USB for wired connection
 config ZMK_USB
     default y
-  
+
 endif
 
 if SHIELD_DASBOB_LEFT || SHIELD_DASBOB_RIGHT
 
 config ZMK_SPLIT
-    default y
-
-# Use UART for split communiction via TRRS
-config ZMK_SPLIT_UART
     default y
 
 endif
